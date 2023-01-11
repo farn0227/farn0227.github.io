@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+.text-button{
+    color: #56237C;
+}
+.text-little{
+    color: #56237C;
+}
+body {
+    font-family: 'Rubik', 'sans-serif';
+    background-color: #17185c;
+    
+}
+.home-background{
+    background-image: url("asset/image/background/bg-main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#projects {
+    
+}
+#works {
+    
+}
+.bg{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p{
+    font-family: 'Quantico', sans-serif;
+}
+h1 {
+    font-family: 'Secular One', sans-serif;
+}
+.text-littletittle{
+    color: rgba(255, 167, 177, 1);
+    font-family: 'rubik' , 'sans-serif';
+}
+#resume-button {
+    position: relative;
+    background: rgba(192, 158, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(192, 158, 255, 0.15);
+
+}
+html {
+    scroll-behavior: smooth;
+  }
+.dot-glow {
+    box-shadow: 0px 0px 20px 3px rgb(145, 42, 255);
+}
+.text {
+    font-size: 1.1rem;
+}
+.text-littletext{
+    color: rgb(230, 199, 253);
+}
+.text-support {
+    color: rgba(233, 0, 181, 1);
+}
+.spire-glass{
+    background-image: url('');
+    width : 30rem ;
+    height : 30rem ;
+    background: rgba(192, 158, 255, 0.1);
+    box-shadow: 0px 0px 20px 10px rgb(24, 0, 32);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(192, 158, 255, 0.15);
+}
+.dot-glow {
+    animation-name: dot-glow;
+    animation-duration: 3s ;
+    animation-iteration-count: infinite;
+    box-shadow: 0px 0px 20px 3px rgb(163, 77, 255);
+  }
+.page-glow {
+    background: rgba(192, 158, 255, 0.15);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(192, 158, 255, 0.15);
+            gap: 0px 6px;
+            left: 15%;
+            top: 7rem;
+}
+.page-glow2 {
+    background: rgba(192, 158, 255, 0.15);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(192, 158, 255, 0.15);
+            gap: 0px 6px;
+            right: 15%;
+            bottom: 5rem;
+}
+@keyframes dot-glow{
+    0%   { }
+    50% {opacity: 50%;}
+    100% {  }
+  }
+.spire-gradient {
+    background: rgb(255,188,0);
+background: linear-gradient(90deg, rgba(255,188,0,1) 0%, rgba(255,0,214,0.6530987394957983) 56%, rgba(0,0,0,0) 100%);
+}
+.js-card {
+    width : 8rem ;
+    height : 8rem ;
+background: rgba(192, 158, 255, 0.15);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(15px);
+border: 1px solid rgba(192, 158, 255, 0.15);
+top : -2rem;
+animation-name: js-card;
+animation-duration: 1.5s ;
+animation-iteration-count: infinite;
+}
+.react-card {
+    width : 8rem ;
+    height : 8rem ;
+  background: rgba(192, 158, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(192, 158, 255, 0.15);
+animation-name: react-card;
+animation-duration: 1.5s ;
+animation-iteration-count: infinite;
+}
+.html-card {
+    width : 8rem ;
+    height : 8rem ;
+background: rgba(192, 158, 255, 0.15);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(15px);
+border: 1px solid rgba(192, 158, 255, 0.15);
+bottom: -10px;
+animation-name: html-card;
+animation-duration: 5s ;
+animation-iteration-count: infinite;
+}
+
+@keyframes js-card {
+    0%   { }
+    50% {top: -25px;}
+    100% {  }
+  }
+  @keyframes react-card {
+    0%   { }
+    50% {top: 70px;}
+    100% {  }
+  }
+  @keyframes html-card {
+    0%   { }
+    50% {bottom: 1%;}
+    100% {  }
+  }
+
+.card-projects {
+    background: rgb(141,30,168);
+background: linear-gradient(90deg, rgba(141,30,168,1) 14%, rgba(204,25,223,1) 69%, rgba(0,212,255,0) 100%);
+}
+
+.projects-prev{
+    background:  
+        linear-gradient(
+          rgba(0, 0, 0, 0.378), 
+          rgba(0, 0, 0, 0.508)
+        ),
+    url("./asset/image/background/reile.jpg");
+}
+
+  
