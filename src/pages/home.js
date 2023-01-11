@@ -51,7 +51,7 @@ $('#toggle-hamburger').on('click', function(){
       <a href='#projects' className='cursor-pointer block w-2 h-2 bg-pink-900 rounded-full '></a>
       <a href='#contact' className='cursor-pointer block w-2 h-2 bg-pink-900 rounded-full '></a>
     </div>
-    <First />
+    {/* <First /> */}
     <About />
     <Work />
     <Projects />
