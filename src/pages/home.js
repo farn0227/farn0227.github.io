@@ -5,63 +5,40 @@ import About from "../components/about";
 import Work from "../components/work";
 import Projects from "../components/project";
 import Contact from "../components/contact.js";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import $ from "jquery"
+import $ from "react";
+import { Link } from 'react-router-dom';
 import { Fragment, useEffect } from "react";
-import {
-  Routes,
-  Route
-} from "react-router-dom";
 function Home() {
-  // hamburger 
-$("#close-ham").on('click' ,function(){
-  $(".hamburger").animate({left: '-100%' } );
-  $(".line1").animate({left: '0'} , 100);
-  $(".line2").delay(100).animate({left: '0'} , 100);
-  $(".line3").delay(200).animate({left: '0'} , 100);
-}); 
-
-// clicked-list-ham
-$(".clicked-list-ham").on('click' ,function(){
-    $(".hamburger").animate({left: '-100%' } );
-  $(".line1").animate({left: '0'} , 100);
-  $(".line2").delay(100).animate({left: '0'} , 100);
-  $(".line3").delay(200).animate({left: '0'} , 100);
-
-});  
-$('#toggle-hamburger').on('click', function(){
-  $(".line1").animate({left: '10rem'} , 100);
-  $(".line2").delay(100).animate({left: '10rem'} , 100);
-  $(".line3").delay(200).animate({left: '10rem'} , 100);
-  $(".hamburger").animate({left : '0px'} );
-}); 
   useEffect(() => {
-    document.title = "FARN";
+   
+
   }, []);
-   useEffect(() => {
-      AOS.init();
-    }, []) 
+
   return (
-
-   <div  className=' text-white home-background'>
-<div  style={{bottom:"40%" , left:"10%"}} className='fixed z-10 hidden xl:flex items-center   flex-col gap-5'>
-      <a href='#about' className='cursor-pointer block w-3 h-3 bg-pink-600 rounded-full '></a>
-      <a href='#works' className='cursor-pointer block w-2 h-2 bg-pink-900 rounded-full '></a>
-      <a href='#projects' className='cursor-pointer block w-2 h-2 bg-pink-900 rounded-full '></a>
-      <a href='#contact' className='cursor-pointer block w-2 h-2 bg-pink-900 rounded-full '></a>
+    <div className='text-white home-background'>
+      <div style={{bottom: "40%", left: "10%"}} className='fixed  z-10 hidden xl:flex items-center flex-col gap-5'>
+      <a data-scroll="about" href='#about' className='flex items-center border-2 p-2 rounded-full border-pink-600 relative justify-center'>
+      <span style={{ width:"1.5vh" , height:"1.5vh" }} className='absolute origin-center  rounded-full  bg-pink-600'></span>
+      </a>
+      <a data-scroll="works" href='#works' className='flex items-center  p-2 rounded-full border-pink-600 relative justify-center'>
+      <span style={{ width:"1.5vh" , height:"1.5vh" }} className='absolute origin-center  rounded-full  bg-pink-600'></span>
+      </a>
+      <a data-scroll="projects" href='#projects' className='flex items-center  p-2 rounded-full border-pink-600 relative justify-center'>
+      <span style={{ width:"1.5vh" , height:"1.5vh" }} className='absolute origin-center  rounded-full  bg-pink-600'></span>
+      </a>
+      <a data-scroll="contact" href='#contact' className='flex items-center  p-2 rounded-full border-pink-600 relative justify-center'>
+      <span style={{ width:"1.5vh" , height:"1.5vh" }} className='absolute origin-center  rounded-full  bg-pink-600'></span>
+      </a>
+      
+       
+       
+      </div>
+      <First />
+      <About />
+      <Work />
+      <Projects />
+      <Contact />
     </div>
-    {/* <First /> */}
-    <About />
-    <Work />
-    <Projects />
-    <Contact />
-
-  
-   </div>
- 
-
-
   );
 }
 export default Home;

@@ -9,12 +9,18 @@ import Projects from "./pages/projects/projects";
 import Socmed from "./components/socmed";
 import MavigationBar from "./components/navbar";
 import { Fragment, useEffect } from "react";
-import {
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter, BrowserRouter as Router, Route , Routes } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
+
+
+
+
+
+
 function App() {
-  // hamburger 
+  useEffect(()=> {
+// hamburger 
 $("#close-ham").on('click' ,function(){
   $(".hamburger").animate({left: '-100%' } );
   $(".line1").animate({left: '0'} , 100);
@@ -36,21 +42,33 @@ $('#toggle-hamburger').on('click', function(){
   $(".line3").delay(200).animate({left: '10rem'} , 100);
   $(".hamburger").animate({left : '0px'} );
 }); 
+  })
+  
   useEffect(() => {
     document.title = "FARN";
   }, []);
    useEffect(() => {
       AOS.init();
     }, []) 
+  
   return (
-  <div className='text-white'>
+  <div className='text-white' id="app-container">
+    
+         
+          <BrowserRouter>
+          <ScrollToTop />
           <MavigationBar />
           <Socmed />
           <Ham />
-          <Routes>
-    <Route path="/" element={<Home/>}> </Route>
-    <Route path="/projects" element={<Projects/>}> </Route>
-  </Routes>
+          <Routes scrollToTop>
+          <Route path="/" element={<Home />} />
+    <Route path="/projects" element={<Projects />} />
+    </Routes>
+          </BrowserRouter>
+
+
+
+
   </div>
   
   

@@ -17,10 +17,18 @@ body {
     background-color: #17185c;
     
 }
-.home-background{
-    background-image: url("asset/image/background/bg-main.png");
+.footer{
+    background-image: url("asset/image/background/footer.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top;
+}
+
+.home-background{
+    background-image: url("asset/image/background/bg-primary.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 #projects {
     
@@ -29,9 +37,7 @@ body {
     
 }
 .bg{
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
+   
 }
 
 p{
@@ -54,7 +60,7 @@ h1 {
 
 }
 html {
-    scroll-behavior: smooth;
+
   }
 .dot-glow {
     box-shadow: 0px 0px 20px 3px rgb(145, 42, 255);

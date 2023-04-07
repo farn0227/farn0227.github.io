@@ -3,7 +3,7 @@ import '../style.css';
 
 function First(){
     return (
-        <div className="first">
+        <div className="first sec">
         <div  data-aos="fade-right" className="h-screen  flex r pt-20  items-center md:w-3/5 w-full px-5 md:px-0 m-auto">
             
             <div className="flex flex-col gap-10 ">
