@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useRef, useEffect , useState } from 'react';
 import '../style.css';
 import profile from '../asset/image/profile/bmo-farn2.png';
+import { animateScroll as scroll } from 'react-scroll';
 
-function about(){
+
+function About(){
+  
+
     return (
-        <div id="about" data-aos="fade-right" data-aos-duration="600"  className="sec xl:w-4/6 lg:w-5/6 w-full px-5 lg:px-0   m-auto text-white pt-20 h-screen  flex items-center ">
+        <div id="about"   data-aos="fade-right" data-aos-duration="600"  className="sec xl:w-4/6 lg:w-5/6 w-full px-5 lg:px-0   m-auto text-white pt-20 h-screen  flex items-center ">
         <div className="flex  items-center justify-center  w-full lg:gap-10">
             <div className="" >
                 <ul className=" flex flex-col gap-5  ">
@@ -36,4 +40,4 @@ function about(){
     </div>
     )
 }
-export default about;
+export default About;

@@ -12,10 +12,9 @@
 .text-little{
     color: #56237C;
 }
-body {
+.home-default{
     font-family: 'Rubik', 'sans-serif';
     background-color: #17185c;
-    
 }
 .footer{
     background-image: url("asset/image/background/footer.png");

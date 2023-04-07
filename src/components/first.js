@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import '../style.css';
-
-function First(){
+function First({setClick}){
     return (
         <div className="first sec">
         <div  data-aos="fade-right" className="h-screen  flex r pt-20  items-center md:w-3/5 w-full px-5 md:px-0 m-auto">
@@ -16,7 +16,7 @@ function First(){
                 <span className="w-3 h-3 rounded-full bg-white block"></span>
                 <span className="w-3 h-3 rounded-full bg-white block"></span>
                 </div>
-<a href="#about" className="text-button text-center font-bold bg-white rounded-full block w-40 py-2">About me</a>
+                <Link to="/#about" onClick={() => {setClick(false);}} className="text-button text-center font-bold bg-white rounded-full block w-40 py-2">About me</Link>
             </div>
         </div>
         </div>
