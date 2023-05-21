@@ -5,7 +5,7 @@ import react from '../asset/image/card/React-icon2.png';
 import html from '../asset/image/card/html.png';
 function work(){
     return (
-        <div id="works"  className="sec flex justify-center h-screen pt-20 gap-10 items-center px-5 lg:px-0">
+        <div id="works" element="works" className="sec flex justify-center h-screen pt-20 gap-10 items-center px-5 lg:px-0">
              
              <div data-aos="fade-left" className="spire-glass lg:block hidden bg-no-repeat bg-cover rounded-full bg-center relative">
             <div className="balok h-full w-full  -z-20 blur-sm absolute rounded-full opacity-50 w-full spire-gradient "></div>

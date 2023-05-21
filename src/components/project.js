@@ -1,16 +1,21 @@
-import React from "react";
 import '../style.css';
 import card from '../asset/image/card/web.webp';
 import { Link } from "react-router-dom";
-function projects(){
-    
+import React from 'react';
+
+
+function Projects({}){
+
+
     return(
-        <div id="projects" >
-        <div  className="sec xl:w-4/6 lg:w-5/6 w-full px-5 lg:px-0  justify-center   m-auto text-white pt-20   flex items-center">
+        <div id='#projects' >
+              
+        <div name=""  className="sec   xl:w-4/6 lg:w-5/6 w-full px-5 lg:px-0  justify-center   m-auto text-white pt-40   flex items-center">
+          
             <div className=" ">
             <p className="text-littletittle text-xl  font-bold font-rubik">03.Work</p>
             <ul className=" gap-10 justify-center flex flex-col  py-10">
-                <Link to="/projects" >
+                <Link   to="/projects">
                 <li data-aos="fade-up" style={{width:"full" }} className="">
                     <div className="card-projects bg-cover  rounded-md overflow-hidden w-full justify-between md:h-96 h-80 bg-white  block md:flex">
                     <div className=" h-full w-full hidden md:flex justify-center  gap-10 flex flex-col w-1/2  px-10 py-5 inside-card-projects">
@@ -58,17 +63,18 @@ function projects(){
                  
                 </li>
                 </Link>   
+        
                 
               
             </ul>
-            <div className="text-center">
-            <button id="resume-button" className="text-littletext cursor-pointer font-rubik w-full md:w-auto text-center  tracking-wide relative  inline-block px-4 py-1  text-base cursor-pointer">See More</button>
-            </div>
+           
             </div>
              
             </div>
+          
             </div>
+            
     )
 
 }
-export default projects ;
+export default Projects ;

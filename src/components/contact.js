@@ -2,9 +2,9 @@ import React from "react";
 import '../style.css';
 function contact(){
     return(
-        <div className="relative">
+        <div id="contact" className="relative">
              <div className="footer w-full  h-screen absolute top-0"></div>
-        <div id="contact" data-aos="fade-down" data-aos-duration="600" className="sec w-full   h-screen flex items-center justify-center">
+        <div id="/contact" data-aos="fade-down" data-aos-duration="600" className="sec w-full   h-screen flex items-center justify-center">
             <div className="flex flex-col gap-10 lg:w-1/2  px-10  justify-center">
             <p className="text-littletittle text-xl  font-bold font-rubik">04.Contacts</p>
             <p className="text-justify lg:w-11/12 text-littletext text-lg">Whether you're interested in discussing a specific project or just want to learn more about what I do, I'd love to hear from you. You can contact me by pressing the button below.</p>
